@@ -18,7 +18,8 @@ int main(void)
 	}
 	for (n = 65; n <= 90; n++)
 	{
-		putchar(n);
+		putchar('n');
+		n++;
 	}
 	putchar('\n');
 	return (0);
