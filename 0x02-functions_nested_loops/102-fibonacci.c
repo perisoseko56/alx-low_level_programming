@@ -19,9 +19,9 @@ int main(void)
 	{
 	k += j;
 	j = k - j;
-	printf(", %d", k)
+	printf(", %ld", k)
 	}
-	i++;
+	++i;
 	}
 	printf("\n");
 	return (0);
