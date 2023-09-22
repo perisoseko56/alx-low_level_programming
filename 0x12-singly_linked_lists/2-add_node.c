@@ -23,9 +23,17 @@ list_t *add_node(list_t **head, const char *str)
 	}
 
 	node->str = strdup(str);
+	if (node->str == NULL)
+	{
+		printf("string duplication failed\n");
+		free(node);
+		return (NULL);
+	}
+
 	node->len = len;
 	node->next = (*head);
 	(*head) = node;
 
-	return (*head);
+	printf("[%u] %s\n", len, str);
+	return (node);
 }
