@@ -1,5 +1,7 @@
+#include <string.h>
 #include "main.h"
 #include <stdio.h>
+int _check(s);
 /**
  * is_palindrome-checks for a palindrome
  * @s:string to be checked
@@ -7,18 +9,27 @@
  */
 int is_palindrome(char *s)
 {
-	int k = strlen(s);
-	int a = s - 1;
-	int b = s + 1;
-
-	if (a >= b)
-	{
-	return (1);
-	}
-
-	if (s[a] != s[b])
-	{
-	return (0);
-	}
-	return (is_palindrome(s, b + 1, a - 1));
+	return (_check(s));
 }
+/**
+ * _strlen-returns length of string
+ * @s:string
+ * Return:always 0
+ */
+int _strlen(char *s)
+{
+	int a = strlen(s);
+
+	return (a);
+}
+/**
+ * _check-checks if the string is empty
+ * @a:string being checked
+ * Return: Always 0
+ */
+int _check(s)
+{
+	if (a  == 0)
+		return (1);
+	return (is_palindrome(*s + 1));
+			}
