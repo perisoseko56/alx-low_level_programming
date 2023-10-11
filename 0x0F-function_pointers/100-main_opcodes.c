@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 			printf("%02hhx\n", c[a]);
 			break;
 		}
-	printf("%02hhx", c[a]);
+	printf("%02hhx ", c[a]);
 	}
 	return (0);
 }
